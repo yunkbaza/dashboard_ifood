@@ -8,3 +8,6 @@ bcrypt>=4.1
 wordcloud>=1.9
 matplotlib>=3.8
 xlsxwriter>=3.2
+fastapi>=0.110
+uvicorn[standard]>=0.23
+python-jose[cryptography]>=3.3

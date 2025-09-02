@@ -113,3 +113,20 @@ produtos: Catálogo de produtos.
 itens_pedido: Detalha os produtos de cada pedido.
 
 feedbacks: Guarda as avaliações e comentários dos clientes.
+## API Backend
+
+Foi adicionada uma API em FastAPI para disponibilizar os dados do dashboard para outras aplicações. Os principais endpoints são:
+
+- `POST /auth/login`: autenticação de usuários com JWT.
+- `GET /lojas`: lista de unidades cadastradas.
+- `GET /pedidos`: pedidos recentes.
+- `GET /metricas`: métricas agregadas de pedidos.
+- `GET /relatorios`: espaço reservado para geração de relatórios.
+
+Para executar a API localmente:
+
+```bash
+uvicorn api.main:app --reload
+```
+
+A API utiliza a mesma variável `DATABASE_URL` já configurada para a aplicação Streamlit.
